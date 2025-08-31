@@ -21,6 +21,11 @@ if height >= 120:
          if disablity == True:
                 print("You get 50% discount, please pay $6")
     else:
-        print("No discount")                                    
+        print("No discount")
+        wants_photo = input("Do you want a photo taken? Y or N. ")
+        if wants_photo == True:
+            print("Please pay $3." + wants_photo)  
+        else:
+            print("No photo")                         
 else:
     print("Sorry, you have to grow taller before you can ride.")        
